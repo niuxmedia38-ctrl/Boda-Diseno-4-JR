@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#d8ddda">
+  <meta name="description" content="Invitación digital de boda — plantilla editorial de demostración.">
+  <title>Nuestra boda · Invitación</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Manrope:wght@300;400;500&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="locked">
+  <a class="skip-link" href="#invitacion">Saltar a la invitación</a>
+
+  <div class="entry" id="entry" role="dialog" aria-modal="true" aria-labelledby="entryTitle">
+    <div class="entry__mist" aria-hidden="true"></div>
+    <div class="envelope-wrap">
+      <p class="entry__eyebrow">Nombre <i>&amp;</i> Nombre</p>
+      <p class="entry__prelude">Una invitación para ti</p>
+      <button class="envelope" id="openInvitation" type="button" aria-label="Abrir la invitación de boda">
+        <span class="envelope__back"></span>
+        <span class="envelope__letter">
+          <span class="monogram">N<span>&amp;</span>N</span>
+          <span class="entry__names" id="entryTitle">Nombre &amp; Nombre</span>
+          <span class="entry__date">10 · 08 · 2027</span>
+        </span>
+        <span class="envelope__front"></span>
+        <span class="envelope__flap"></span>
+        <span class="seal" aria-hidden="true">N<span>&amp;</span>N</span>
+      </button>
+      <button class="open-label" id="openLabel" type="button">Toca el sobre para abrir</button>
+      <p class="demo-note">Plantilla · datos de demostración</p>
+    </div>
+  </div>
+
+  <div class="ambient" aria-hidden="true">
+    <span class="ambient__veil"></span>
+    <span class="ambient__grain"></span>
+  </div>
+
+  <main class="invitation" id="invitacion" tabindex="-1">
+    <header class="hero scene">
+      <div class="hero__photo" aria-hidden="true"></div>
+      <div class="hero__veil" aria-hidden="true"></div>
+      <p class="hero__prelude reveal">Nos elegimos para siempre</p>
+      <h1 class="hero__names reveal"><span>Nombre</span><i>&amp;</i><span>Nombre</span></h1>
+      <p class="hero__invitation reveal">Tenemos el honor de invitarte<br>a celebrar nuestra boda</p>
+      <div class="hero__date reveal" aria-label="10 de agosto de 2027">
+        <span>Martes</span><strong>10</strong><span>Agosto<br>2027</span>
+      </div>
+      <svg class="flourish flourish--hero" viewBox="0 0 260 80" aria-hidden="true">
+        <path d="M8 45c38-35 58 19 99-5 14-8 18-23 9-31-9-7-23 3-15 15 14 20 49 8 62-6M252 45c-38-35-58 19-99-5-14-8-18-23-9-31 9-7 23 3 15 15-14 20-49 8-62-6"/>
+        <path d="M40 58c18-13 31-10 44 1m136-1c-18-13-31-10-44 1"/>
+      </svg>
+      <span class="scroll-cue" aria-hidden="true">Desliza</span>
+    </header>
+
+    <section class="welcome scene" aria-labelledby="welcomeTitle">
+      <p class="script-kicker reveal">Querida familia y amigos</p>
+      <h2 id="welcomeTitle" class="sr-only">Bienvenida</h2>
+      <p class="welcome__copy reveal">Estamos felices de compartir con ustedes el día más importante de nuestra historia. Acompáñennos a brindar, reír y comenzar este nuevo capítulo.</p>
+      <div class="countdown reveal" data-date="2027-08-10T17:00:00-06:00" aria-label="Cuenta regresiva para la boda">
+        <span class="countdown__lead">Faltan</span>
+        <div><strong data-unit="days">000</strong><small>días</small></div>
+        <b>·</b>
+        <div><strong data-unit="hours">00</strong><small>horas</small></div>
+        <b>·</b>
+        <div><strong data-unit="minutes">00</strong><small>min</small></div>
+        <b>·</b>
+        <div><strong data-unit="seconds">00</strong><small>seg</small></div>
+      </div>
+      <p class="data-warning reveal">Fecha de demostración. Sustituye los datos antes de enviar.</p>
+    </section>
+
+    <section class="places scene" aria-labelledby="placesTitle">
+      <div class="places__photo reveal">
+        <img src="assets/recepcion-jardin.jpg" width="1536" height="1024" alt="Mesa de recepción elegante en un jardín">
+      </div>
+      <div class="places__wash" aria-hidden="true"></div>
+      <div class="places__heading reveal">
+        <span class="section-number">01</span>
+        <h2 id="placesTitle">Dónde<br>celebramos</h2>
+      </div>
+      <article class="place place--ceremony reveal">
+        <p class="place__label">Ceremonia</p>
+        <time datetime="2027-08-10T17:00:00-06:00">17:00 h</time>
+        <h3>Iglesia por confirmar</h3>
+        <p>Dirección pendiente</p>
+        <button class="text-link" type="button" disabled>Ubicación pendiente</button>
+      </article>
+      <article class="place place--party reveal">
+        <p class="place__label">Recepción</p>
+        <time datetime="2027-08-10T18:30:00-06:00">18:30 h</time>
+        <h3>Salón por confirmar</h3>
+        <p>Dirección pendiente</p>
+        <button class="text-link" type="button" disabled>Ubicación pendiente</button>
+      </article>
+    </section>
+
+    <section class="timeline scene" aria-labelledby="timelineTitle">
+      <p class="script-kicker reveal">Programa del día</p>
+      <h2 id="timelineTitle" class="sr-only">Itinerario</h2>
+      <div class="timeline__line" aria-hidden="true"></div>
+      <ol>
+        <li class="reveal"><span class="timeline__icon" aria-hidden="true">⌁</span><time>16:30</time><p>Recepción<br>de invitados</p></li>
+        <li class="reveal"><span class="timeline__icon" aria-hidden="true">♢</span><time>17:00</time><p>Ceremonia<br>y votos</p></li>
+        <li class="reveal"><span class="timeline__icon" aria-hidden="true">♧</span><time>18:30</time><p>Cóctel<br>de bienvenida</p></li>
+        <li class="reveal"><span class="timeline__icon" aria-hidden="true">✦</span><time>20:00</time><p>Cena<br>y brindis</p></li>
+        <li class="reveal"><span class="timeline__icon" aria-hidden="true">♫</span><time>22:00</time><p>Baile<br>bajo las estrellas</p></li>
+      </ol>
+    </section>
+
+    <section class="attire scene" aria-labelledby="attireTitle">
+      <div class="attire__content reveal">
+        <span class="section-number">02</span>
+        <p class="script-kicker">Código de vestimenta</p>
+        <h2 id="attireTitle">Formal</h2>
+        <p>Nos encantará verlos con su mejor look. La paleta es solo una guía de inspiración.</p>
+      </div>
+      <div class="palette reveal" aria-label="Paleta sugerida: salvia, gris pizarra, azul niebla y arena">
+        <span style="--swatch:#a8b1a5"></span>
+        <span style="--swatch:#526267"></span>
+        <span style="--swatch:#c8dcdb"></span>
+        <span style="--swatch:#d4c6b7"></span>
+      </div>
+      <div class="attire__sketch" aria-hidden="true">
+        <svg viewBox="0 0 300 390"><path d="M83 360c13-72 18-123 15-188-2-35 7-69 42-90l10-45 10 45c35 21 44 55 42 90-3 65 2 116 15 188M98 171c24 15 80 15 104 0M118 94c4 29 60 29 64 0M150 37l-18-21m18 21 18-21"/><path d="M70 359h160M99 210c-13 8-26 25-34 45m136-45c13 8 26 25 34 45"/></svg>
+      </div>
+    </section>
+
+    <section class="gifts scene" aria-labelledby="giftsTitle">
+      <div class="gifts__veil" aria-hidden="true"></div>
+      <span class="section-number reveal">03</span>
+      <h2 id="giftsTitle" class="reveal">El mejor regalo<br>es compartir este día</h2>
+      <p class="reveal">Si deseas tener un detalle con nosotros, puedes elegir la opción que te resulte más cómoda.</p>
+      <div class="gift-options reveal">
+        <button class="gift-option" type="button" data-copy="Datos bancarios pendientes de configurar">
+          <span aria-hidden="true">✉</span>
+          <b>Lluvia de sobres</b>
+          <small>El día del evento</small>
+        </button>
+        <button class="gift-option" type="button" data-copy="Mesa de regalos pendiente de configurar">
+          <span aria-hidden="true">⌘</span>
+          <b>Mesa de regalos</b>
+          <small>Enlace pendiente</small>
+        </button>
+      </div>
+      <p class="copy-status" id="copyStatus" aria-live="polite"></p>
+    </section>
+
+    <section class="rsvp scene" aria-labelledby="rsvpTitle">
+      <div class="rsvp__heading reveal">
+        <p class="script-kicker">Confirma tu asistencia</p>
+        <h2 id="rsvpTitle">¿Nos acompañas?</h2>
+        <p>Tu respuesta nos ayudará a preparar cada detalle.</p>
+      </div>
+      <form id="rsvpForm" class="rsvp__form reveal">
+        <label>Nombre completo<input name="name" autocomplete="name" required placeholder="Escribe tu nombre"></label>
+        <fieldset>
+          <legend>Asistencia</legend>
+          <label><input type="radio" name="attendance" value="Sí, asistiré" required> Sí, asistiré</label>
+          <label><input type="radio" name="attendance" value="No podré asistir"> No podré asistir</label>
+        </fieldset>
+        <label>Número de invitados<select name="guests"><option>1</option><option>2</option><option>3</option><option>4</option></select></label>
+        <label>Mensaje para los novios<textarea name="message" rows="3" placeholder="Opcional"></textarea></label>
+        <button class="submit-button" type="submit">Preparar mi respuesta</button>
+        <p class="form-note">No se almacena información. Al continuar podrás compartir o copiar tu respuesta.</p>
+        <p class="form-status" id="formStatus" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <footer class="closing scene">
+      <div class="closing__photo" aria-hidden="true"></div>
+      <div class="closing__veil" aria-hidden="true"></div>
+      <p class="reveal">Con todo nuestro cariño</p>
+      <h2 class="reveal">Nombre <i>&amp;</i> Nombre</h2>
+      <p class="closing__date reveal">10 · AGOSTO · 2027</p>
+      <button class="save-date reveal" id="saveDate" type="button">Guardar la fecha</button>
+      <p class="demo-note reveal">Plantilla demostrativa · reemplaza nombres, fecha, lugares y enlaces</p>
+    </footer>
+  </main>
+
+  <button class="sound-toggle" id="soundToggle" type="button" aria-pressed="false" aria-label="Activar sonido ambiental">
+    <span aria-hidden="true">♪</span><small>Ambiente</small>
+  </button>
+  <script src="script.js"></script>
+</body>
+</html>
